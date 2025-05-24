@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+nav a{
+    color: hsl(233, 8%, 62%);
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.nav-a{
+    background: hsl(136, 65%, 51%);
+    padding: 10px;
+    border-radius: 3rem;
+    color: white;
+}
+
+.nav-a a{
+    color: white;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 10px;
+    background:  hsl(0, 0%, 98%);
+}
+
+.header-main{
+    align-self: center;
+}
+
+.header-main h1{
+    width: 15rem;
+    font-size: 35px;
+    margin: 1rem;
+}
+
+.header-main p{
+    color:hsl(233, 8%, 62%) ;
+    font-size: 18px;
+    margin: 1rem;
+    
+}
+
+.header-main a{
+    background: hsl(136, 65%, 51%);
+    line-height: 4rem;
+    padding: 10px;
+    border-radius: 3rem;
+    color: white;
+    margin: 1rem;
+}
+
+.header-aside{
+    background-image: url(./images/bg-intro-desktop.svg);
+    width: 100%;
+    height: 50rem;
+}
+
+.header-image{
+
+}
+
+
+Section{
+    background: hsl(220, 16%, 96%);
+    padding: 10px;
+    align-items: center;
+    display: grid;
+}
+
+.Section-main{
+    margin: 2rem;
+}
+
+.Section-main h1{
+    color: hsl(233, 26%, 24%);
+    margin: 1rem;
+}
+
+.Section-main p{
+    font-size: 18px;
+    margin: 1rem;
+    color:hsl(233, 8%, 62%);
+    width: 36rem;
+}
+
+.Section-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.card-icon{
+    margin: 1rem;
+}
+
+.Section-card h1{
+    color: hsl(233, 26%, 24%);
+    margin: 1rem;
+    font-size: 20px;
+}
+
+
+.Section-card p{
+    font-size: 18px;
+    color: hsl(233, 8%, 62%);
+    width: 16rem;
+    margin: 1rem;
+}
+
+
+section{
+    background:  hsl(220, 16%, 96%);
+    padding: 10px;
+    align-items: center;
+    display: grid;
+}
+
+section h1{
+    font-size: 40px;
+    margin: 2rem;
+    color: hsl(233, 26%, 24%);
+}
+
+.section-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.section-card:hover{
+    background: white;
+}
+
+.section-image{
+    width: 18rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.section-card p{
+    margin: 1rem;
+    font-size: 18px;
+    color:hsl(233, 8%, 62%) ;
+}
+
+.section-card h1{
+    font-size: 20px;
+    color: hsl(233, 26%, 24%);
+    margin: 1rem;
+}
+
+.section-card h1:hover{
+    color: hsl(136, 65%, 51%);
+}
+
+footer{
+    background:  hsl(233, 26%, 24%);
+   padding: 10px;
+}
+
+.footer-body{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;   
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.logo-ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.About a{
+    color: white;
+    font-size: 18px;
+}
+
+.About li{
+    margin: 1rem;
+}
+
+.Career a{
+    color: white;
+    font-size: 18px;
+}
+
+.Career li{
+    margin: 1rem;
+}
+
+.Request a{
+    background: hsl(136, 65%, 51%);
+    padding: 10px;
+    border-radius: 3rem;
+    color: white;
+    margin: 1rem;
+}
+
+.Request{
+    margin:2rem ;
+}
+
+.Request p{
+    margin: 1rem;
+    color: white;
+}
+
+/*===============================Mobile screen=============*/
+@media screen and (max-width: 375px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .header-aside{
+        background: url(./images/bg-intro-mobile.svg);
+        background-size: cover;
+        
+    }
+
+    .header-image{
+        width: 20rem;
+    }
+
+    .Section-main h1{
+        width:15rem;
+    }
+
+    .Section-main p{
+        width: 20rem;
+    }
+
+    .Section-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo{
+        place-items: center;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .nav-a{
+        display: none;
+    }
+}
